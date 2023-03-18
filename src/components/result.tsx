@@ -2,7 +2,11 @@
 
 import React, { useState } from "react";
 
-const Result = () => {
+type ResultProps = {
+  result: any;
+};
+
+const Result = ({ result }: ResultProps) => {
   const [deleteResult, setDeleteResult] = useState(false);
 
   function deleteResultHandler() {
@@ -28,18 +32,7 @@ const Result = () => {
               className="text-sm xl:text-base text-zinc-800 font-medium"
               id="result_text"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-              explicabo magni, ullam quod ipsum, iste labore voluptatum corrupti
-              nihil porro nemo ut, consectetur sit. Ratione illum cumque magnam
-              est aperiam dolore distinctio doloremque quis, esse expedita ullam
-              cum eum ipsa deleniti quidem repellendus voluptas perspiciatis
-              soluta veritatis. Odit iure earum incidunt magnam delectus, itaque
-              id mollitia eligendi expedita est quasi. Vero alias ratione
-              reprehenderit totam praesentium quo repellat facere nobis, eius
-              minima laboriosam sapiente accusamus hic officia ab voluptatibus
-              tempora culpa veritatis vel accusantium asperiores perferendis,
-              quaerat mollitia. Fugit, debitis quidem? Officiis culpa accusamus
-              animi ab odit sunt in doloremque!
+              {result.result}
             </p>
             <div className="flex items-center justify-end gap-3 mt-5">
               <button
@@ -53,9 +46,9 @@ const Result = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="feather feather-clipboard w-4 h-4"
                 >
                   <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
@@ -74,9 +67,9 @@ const Result = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="feather feather-trash-2 w-4 h-4"
                 >
                   <polyline points="3 6 5 6 21 6"></polyline>

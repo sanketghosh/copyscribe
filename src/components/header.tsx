@@ -12,9 +12,9 @@ const AppHeader = () => {
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             className="feather feather-pen-tool w-6 h-6 lg:w-7 lg:h-7"
           >
             <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
